@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amani Physiotherapy & Wellness — Kilimani, Nairobi</title>
+  <meta name="description" content="Expert physiotherapy in Kilimani, Nairobi. Sports injury rehab, back pain treatment, post-surgery recovery, and workplace injury care. Book your consultation today.">
+  
+
+  <!-- ===== CLOUDFLARE ANALYTICS ===== -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "YOUR_TOKEN"}'></script>
+
+  <!-- ===== GOOGLE FONTS (Your Style) ===== -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ============================================================
+       AMANI PHYSIOTHERAPY — Dark + Lime (Your Signature Style)
+       ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:   #0A0A0A;
+      --black2:  #111111;
+      --card:    #161616;
+      --border:  #242424;
+      --cream:   #F0EBE1;
+      --lime:    #C8F04C;
+      --lime-dk: #A8CC35;
+      --gray:    #888888;
+      --gray2:   #444444;
+      --white:   #FFFFFF;
+      --max:     1120px;
+      --teal:    #4ECDC4;
+      --teal-dk: #3AB0A8;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--black);
+      color: var(--cream);
+      line-height: 1.6;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    h1, h2, h3 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      line-height: 1.1;
+      margin: 0 0 0.5em;
+      color: var(--white);
+      letter-spacing: -0.02em;
+    }
+
+    h1 { font-size: clamp(2.4rem, 5vw, 4rem); }
+    h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); }
+    h3 { font-size: 1.2rem; }
+
+    p { margin: 0 0 1em; color: var(--gray); font-weight: 300; line-height: 1.8; }
+
+    .eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--lime);
+      display: inline-block;
+      margin-bottom: 0.9rem;
+    }
+
+    .eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 1px;
+      background: var(--lime);
+      margin-right: 0.8rem;
+      vertical-align: middle;
+    }
+
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 1.4rem; }
+    section { padding: 4.2rem 0; }
+    .center { text-align: center; }
+
+    .lede {
+      font-size: 1.05rem;
+      color: var(--gray);
+      max-width: 62ch;
+      font-weight: 300;
+      line-height: 1.8;
+    }
+
+    .lede strong { color: var(--cream); font-weight: 500; }
+    .lede.center { margin-inline: auto; }
+
+    /* ── TOP BAR ── */
+    .topbar {
+      background: var(--black2);
+      color: var(--gray2);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .topbar .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 1.4rem;
+      padding: 0.55rem 1.4rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .topbar .contacts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 1.3rem;
+    }
+
+    .topbar a {
+      color: var(--gray);
+      transition: color 0.2s;
+    }
+
+    .topbar a:hover { color: var(--lime); }
+
+    .topbar .badge { color: var(--lime); }
+
+    /* ── NAV ── */
+    header.site {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(10,10,10,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.9rem 1.4rem;
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    .brand {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: -0.02em;
+    }
+
+    .brand span { color: var(--lime); }
+
+    nav.links {
+      display: none;
+      gap: 1.7rem;
+      font-size: 0.88rem;
+      font-weight: 400;
+    }
+
+    nav.links a {
+      color: var(--gray);
+      transition: color 0.2s;
+    }
+
+    nav.links a:hover { color: var(--white); }
+
+    .nav-cta {
+      background: var(--lime) !important;
+      color: var(--black) !important;
+      padding: 0.5rem 1.2rem;
+      font-weight: 700;
+      font-size: 0.78rem;
+      border-radius: 4px;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+
+    .nav-cta:hover { background: var(--lime-dk) !important; }
+
+    .menu-btn {
+      background: none;
+      border: none;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      color: var(--gray);
+      cursor: pointer;
+      padding: 0.4rem 0;
+      transition: color 0.2s;
+    }
+
+    .menu-btn:hover { color: var(--white); }
+
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      padding: 1rem 1.4rem 1.4rem;
+      gap: 0.9rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .mobile-menu.open { display: flex; }
+
+    .mobile-menu a {
+      color: var(--gray);
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    .mobile-menu a:hover { color: var(--white); }
+
+    .mobile-menu .nav-cta {
+      display: inline-block;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    @media (min-width: 900px) {
+      nav.links { display: flex; }
+      .nav-cta { display: inline-block; }
+      .menu-btn { display: none; }
+      .mobile-menu { display: none !important; }
+    }
+
+    /* ── SIGNATURE LINE ── */
+    .sig-line {
+      width: 100%;
+      max-width: 460px;
+      height: 46px;
+      margin: 1.2rem 0;
+    }
+
+    .sig-line path {
+      fill: none;
+      stroke: var(--lime);
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-dasharray: 420;
+      stroke-dashoffset: 420;
+      animation: draw 1.8s ease-out 0.2s forwards;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .sig-line path { animation: none; stroke-dashoffset: 0; }
+    }
+
+    @keyframes draw {
+      to { stroke-dashoffset: 0; }
+    }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 3.6rem 0 2.6rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 10%;
+      left: 20%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(200,240,76,0.04) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .hero .wrap {
+      display: grid;
+      gap: 2.4rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-copy { max-width: 640px; }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-top: 1.6rem;
+    }
+
+    .hero-art {
+      aspect-ratio: 4/3;
+      border-radius: 8px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-art svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (min-width: 960px) {
+      .hero .wrap {
+        grid-template-columns: 1.1fr 0.9fr;
+        align-items: center;
+      }
+    }
+
+    /* ── BUTTONS ── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+      font-size: 0.88rem;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.15s ease, background 0.2s ease;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .btn:active { transform: scale(0.98); }
+
+    .btn-primary {
+      background: var(--lime);
+      color: var(--black);
+    }
+
+    .btn-primary:hover { background: var(--lime-dk); }
+
+    .btn-ghost {
+      border: 1px solid var(--border);
+      color: var(--cream);
+      background: transparent;
+    }
+
+    .btn-ghost:hover { border-color: var(--lime); color: var(--lime); }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: #fff;
+    }
+
+    .btn-whatsapp:hover { background: #1DA851; }
+
+    /* ── TRUST STRIP ── */
+    .trust {
+      background: var(--black2);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .trust .wrap {
+      display: grid;
+      gap: 1.6rem;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      text-align: center;
+      padding: 2.2rem 1.4rem;
+    }
+
+    .trust .item .num {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: var(--lime);
+    }
+
+    .trust .item .lbl {
+      font-size: 0.82rem;
+      color: var(--gray);
+      font-weight: 300;
+    }
+
+    /* ── CARDS ── */
+    .grid {
+      display: grid;
+      gap: 1.6rem;
+    }
+
+    @media (min-width: 720px) {
+      .grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+      .grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+      .grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 6px;
+      padding: 1.9rem;
+      border: 1px solid var(--border);
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .card:hover {
+      border-color: var(--lime);
+      transform: translateY(-2px);
+    }
+
+    .card .eyebrow { margin-bottom: 0.5em; }
+    .card h3 { color: var(--white); }
+    .card .icon { font-size: 2.2rem; margin-bottom: 0.8rem; display: block; }
+
+    .card ul {
+      padding-left: 1.1rem;
+      margin: 0.8rem 0 0;
+      color: var(--gray);
+      font-weight: 300;
+    }
+
+    .card li { margin-bottom: 0.35rem; }
+
+    /* ── CONDITION BADGES ── */
+    .condition-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0.8rem;
+      margin-top: 1.5rem;
+    }
+
+    .condition-badge {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.8rem 1rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--cream);
+      font-weight: 400;
+      transition: border-color 0.2s, background 0.2s;
+      cursor: default;
+    }
+
+    .condition-badge:hover {
+      border-color: var(--lime);
+      background: rgba(200,240,76,0.04);
+    }
+
+    .condition-badge .icon { font-size: 1.5rem; display: block; margin-bottom: 0.3rem; }
+
+    /* ── PRIVACY BAND ── */
+    .privacy-band {
+      background: var(--black2);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .privacy-band .wrap {
+      display: flex;
+      gap: 1.4rem;
+      align-items: flex-start;
+      padding: 2.4rem 1.4rem;
+    }
+
+    .privacy-band .icon {
+      flex: 0 0 auto;
+      color: var(--lime);
+    }
+
+    .privacy-band h3 { color: var(--white); }
+
+    /* ── TESTIMONIALS ── */
+    .testimonial-card {
+      background: var(--card);
+      border-radius: 6px;
+      padding: 1.9rem;
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--lime);
+    }
+
+    .testimonial-card .stars {
+      color: var(--lime);
+      font-size: 1rem;
+      letter-spacing: 0.15em;
+      margin-bottom: 0.6rem;
+    }
+
+    .testimonial-card blockquote {
+      font-family: 'Syne', serif;
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--cream);
+      line-height: 1.7;
+      margin-bottom: 0.8rem;
+    }
+
+    .testimonial-card .name {
+      font-weight: 600;
+      color: var(--white);
+      font-size: 0.9rem;
+    }
+
+    .testimonial-card .role {
+      font-size: 0.8rem;
+      color: var(--gray);
+      font-weight: 300;
+    }
+
+    /* ── FAQ ── */
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 1.3rem 0;
+    }
+
+    .faq-item:first-child { border-top: 1px solid var(--border); }
+
+    .faq-q {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+      width: 100%;
+      text-align: left;
+      font-family: 'Syne', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--white);
+      padding: 0;
+    }
+
+    .faq-q .plus {
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--lime);
+      font-size: 1.3rem;
+      transition: transform 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .faq-item.open .plus { transform: rotate(45deg); }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.25s ease;
+      color: var(--gray);
+      font-weight: 300;
+    }
+
+    .faq-item.open .faq-a {
+      max-height: 400px;
+      margin-top: 0.8rem;
+    }
+
+    /* ── FORMS ── */
+    .form-panel {
+      background: var(--card);
+      border-radius: 6px;
+      padding: 2rem;
+      border: 1px solid var(--border);
+      max-width: 640px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .form-panel h3 { color: var(--white); }
+
+    .field { margin-bottom: 1.1rem; }
+
+    label {
+      display: block;
+      font-size: 0.75rem;
+      color: var(--gray);
+      margin-bottom: 0.35rem;
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 0.75rem 0.9rem;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      background: var(--black);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      color: var(--cream);
+      transition: border-color 0.2s;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      border-color: var(--lime);
+    }
+
+    input::placeholder, textarea::placeholder { color: var(--gray2); }
+    select option { background: var(--black); color: var(--cream); }
+    textarea { min-height: 110px; resize: vertical; }
+
+    .form-status {
+      font-size: 0.78rem;
+      color: var(--gray2);
+      margin-top: 0.9rem;
+      font-weight: 300;
+    }
+
+    .form-status a { color: var(--lime); }
+
+    /* ── FOOTER ── */
+    footer.site {
+      background: var(--black2);
+      border-top: 1px solid var(--border);
+    }
+
+    footer.site .wrap {
+      padding: 3rem 1.4rem 2.2rem;
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 720px) {
+      footer.site .wrap { grid-template-columns: 1.3fr 1fr 1fr; }
+    }
+
+    footer.site a {
+      color: var(--gray);
+      transition: color 0.2s;
+    }
+
+    footer.site a:hover { color: var(--lime); }
+
+    footer.site h4 {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--lime);
+      margin: 0 0 0.9rem;
+      opacity: 0.8;
+    }
+
+    footer.site ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      font-size: 0.88rem;
+      font-weight: 300;
+    }
+
+    footer .fine {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 1.2rem;
+      font-size: 0.7rem;
+      color: var(--gray2);
+      font-weight: 300;
+    }
+
+    /* ── WHATSAPP FLOAT ── */
+    .wa-float {
+      position: fixed;
+      bottom: 1.4rem;
+      right: 1.4rem;
+      z-index: 60;
+      background: #25D366;
+      color: #fff;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(37,211,102,0.3);
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+
+    .wa-float:hover { transform: scale(1.1); }
+
+    .wa-float svg { width: 28px; height: 28px; }
+
+    /* ── SECTION ALT ── */
+    .section-alt { background: var(--black2); }
+
+    /* ── TAGS ── */
+    .tag {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.55rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--lime);
+      background: rgba(200,240,76,0.08);
+      border: 1px solid rgba(200,240,76,0.15);
+      padding: 0.2rem 0.6rem;
+      border-radius: 20px;
+      margin: 0 0.4rem 0.4rem 0;
+    }
+
+    /* ── REVEAL ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .topbar .contacts { display: none; }
+      .topbar .badge { font-size: 0.55rem; }
+      .hero .wrap { grid-template-columns: 1fr; }
+      .hero-art { display: none; }
+      .grid.cols-2 { grid-template-columns: 1fr; }
+      .grid.cols-3 { grid-template-columns: 1fr; }
+      .grid.cols-4 { grid-template-columns: 1fr 1fr; }
+      .privacy-band .wrap { flex-direction: column; align-items: center; text-align: center; }
+      .hero-actions { flex-direction: column; align-items: stretch; }
+      .btn { justify-content: center; }
+      .condition-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .hero { padding-top: 1rem; }
+    }
+
+    @media (max-width: 400px) {
+      .grid.cols-4 { grid-template-columns: 1fr; }
+      .condition-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== TOP BAR ===== -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="contacts">
+      <a href="tel:+254712345678">📞 +254 712 345 678</a>
+      <a href="mailto:hello@amaniwellness.co.ke">✉ hello@amaniwellness.co.ke</a>
+      <span>📍 Kilimani, Nairobi</span>
+    </div>
+    <span class="badge">🕐 Mon–Sat · 7am – 7pm</span>
+  </div>
+</div>
+
+<!-- ===== HEADER ===== -->
+<header class="site">
+  <div class="nav">
+    <a href="#home" class="brand">Amani<span>·</span>Physio</a>
+    <nav class="links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#conditions">Conditions</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="nav-cta">Book a consultation</a>
+    <button class="menu-btn" aria-expanded="false">MENU ☰</button>
+  </div>
+  <div class="mobile-menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#conditions">Conditions</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="nav-cta" style="background:var(--lime)!important;color:var(--black)!important;">Book a consultation</a>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow">Physiotherapy · Kilimani, Nairobi</span>
+      <h1>Get back to<br><span style="color:var(--lime);">doing what you love.</span></h1>
+      <svg class="sig-line" viewBox="0 0 460 46" fill="none" aria-hidden="true">
+        <path d="M2 34C60 8 100 44 160 26C210 11 240 40 300 22C340 10 370 30 458 14" />
+      </svg>
+      <p class="lede">Expert physiotherapy for <strong>sports injuries, back pain, post-surgery recovery, and workplace injuries.</strong> Evidence-based treatment that gets you moving again — without the long waits or rushed appointments.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Book a consultation</a>
+        <a href="https://wa.me/254712345678" class="btn btn-whatsapp" target="_blank" rel="noopener" onclick="gtag('event', 'whatsapp_click', {'event_category': 'Contact', 'event_label': 'Hero Button'});">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.51 2 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.13.82.84-3.05-.2-.31a8.16 8.16 0 0 1-1.26-4.36c0-4.52 3.68-8.2 8.24-8.2 2.2 0 4.27.86 5.82 2.42a8.17 8.17 0 0 1 2.41 5.82c0 4.52-3.68 8.2-8.23 8.2Z"/></svg>
+          Message us on WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="hero-art" role="img" aria-label="Physiotherapy illustration">
+      <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+        <!-- Abstract body/physio shapes -->
+        <ellipse cx="200" cy="180" rx="120" ry="80" fill="#1A1A1A" stroke="#C8F04C" stroke-width="1.5" opacity="0.6"/>
+        <ellipse cx="170" cy="140" rx="40" ry="30" fill="none" stroke="#C8F04C" stroke-width="1.5" opacity="0.4"/>
+        <ellipse cx="230" cy="140" rx="40" ry="30" fill="none" stroke="#C8F04C" stroke-width="1.5" opacity="0.4"/>
+        <circle cx="170" cy="140" r="8" fill="#C8F04C" opacity="0.3"/>
+        <circle cx="230" cy="140" r="8" fill="#C8F04C" opacity="0.3"/>
+        <path d="M120 220 Q 200 260 280 220" stroke="#C8F04C" stroke-width="2.5" fill="none" opacity="0.5"/>
+        <circle cx="200" cy="195" r="10" fill="#C8F04C" opacity="0.2"/>
+        <path d="M160 120 L 140 90 M 240 120 L 260 90" stroke="#C8F04C" stroke-width="1.5" opacity="0.3"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST STRIP ===== -->
+<section class="trust">
+  <div class="wrap">
+    <div class="item"><div class="num">1:1</div><div class="lbl">Individualized treatment plans</div></div>
+    <div class="item"><div class="num">45-60</div><div class="lbl">Minutes per session</div></div>
+    <div class="item"><div class="num">Kilimani</div><div class="lbl">Central Nairobi location</div></div>
+    <div class="item"><div class="num">24/7</div><div class="lbl">WhatsApp support for clients</div></div>
+  </div>
+</section>
+
+<!-- ===== PRIVACY BAND ===== -->
+<section class="privacy-band">
+  <div class="wrap">
+    <div class="icon">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#C8F04C" stroke-width="1.6"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z"/><path d="M9 12l2 2 4-4"/></svg>
+    </div>
+    <div>
+      <h3>Your privacy matters.</h3>
+      <p style="max-width:60ch; margin-bottom:0.6rem;">Everything you share during treatment stays between you and your physiotherapist. We follow strict confidentiality protocols aligned with Kenya's health privacy laws.</p>
+      <a href="#faq" style="color:var(--lime); text-decoration:underline; font-weight:600;">Read our privacy policy →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="reveal" style="padding-top:1rem;">
+  <div class="wrap center">
+    <span class="eyebrow">About the practice</span>
+    <h2>Expert physiotherapy,<br><span style="color:var(--lime);">personalized care.</span></h2>
+  </div>
+  <div class="wrap grid" style="grid-template-columns:1fr; gap:2.2rem; margin-top:1.4rem;">
+    <div class="grid cols-2" style="align-items:center;">
+      <div class="hero-art" style="aspect-ratio:1/1; max-width:280px; border-radius:50%; margin:0 auto; background:var(--card); border:2px solid var(--lime);" role="img" aria-label="Physiotherapist portrait">
+        <svg viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="100" fill="#1A1A1A"/>
+          <circle cx="100" cy="82" r="34" fill="#C8F04C" opacity="0.6"/>
+          <path d="M40 175c8-38 40-58 60-58s52 20 60 58" fill="#C8F04C" opacity="0.4"/>
+          <!-- Abstract spine/structure -->
+          <line x1="100" y1="120" x2="100" y2="170" stroke="#C8F04C" stroke-width="1.5" opacity="0.5"/>
+          <circle cx="100" cy="140" r="4" fill="#C8F04C" opacity="0.3"/>
+          <circle cx="100" cy="155" r="4" fill="#C8F04C" opacity="0.3"/>
+        </svg>
+      </div>
+      <div>
+        <p class="lede">Amani Physio was founded to provide <strong>evidence-based physiotherapy</strong> that actually gets results — without the conveyor-belt approach you often find in busy clinics.</p>
+        <p class="lede">With <strong>over 10 years of experience</strong> in sports rehabilitation, orthopedics, and neurological physiotherapy, our team creates personalized treatment plans that help you recover faster and prevent future injuries.</p>
+        <div style="margin-top:1rem;">
+          <span class="tag">BSc Physiotherapy</span>
+          <span class="tag">Sports Rehab Specialist</span>
+          <span class="tag">Dry Needling Certified</span>
+          <span class="tag">Manual Therapy</span>
+          <span class="tag">10+ years experience</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid cols-2">
+      <div class="card">
+        <span class="eyebrow">Our approach</span>
+        <h3>Evidence-based, individualized</h3>
+        <p>No two bodies are the same. We assess your specific condition, lifestyle, and goals — then build a treatment plan that fits you, not a generic protocol.</p>
+      </div>
+      <div class="card">
+        <span class="eyebrow">What to expect</span>
+        <h3>Hands-on, practical care</h3>
+        <p>Manual therapy, exercise prescription, education, and advice — we give you the tools to manage your condition and stay healthy long after you leave the clinic.</p>
+      </div>
+    </div>
+
+    <div class="card" style="background:rgba(200,240,76,0.04); border-color:rgba(200,240,76,0.15); max-width:760px; margin:0 auto;">
+      <span class="eyebrow">Why choose Amani Physio</span>
+      <p style="font-family:'Syne',serif; font-size:1.2rem; font-style:italic; color:var(--cream);">"We treat people, not just symptoms. Whether you're an athlete aiming for a comeback or someone who just wants to walk without pain — we're here for the full journey."</p>
+      <p style="margin:0.6rem 0 0; font-size:0.9rem; color:var(--gray);">— Dr. James Mwangi, Lead Physiotherapist</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services" class="section-alt reveal">
+  <div class="wrap center">
+    <span class="eyebrow">Our services</span>
+    <h2>What we <span style="color:var(--lime);">treat</span></h2>
+    <svg class="sig-line" viewBox="0 0 460 46" fill="none" aria-hidden="true" style="margin-inline:auto;">
+      <path d="M2 34C60 8 100 44 160 26C210 11 240 40 300 22C340 10 370 30 458 14" />
+    </svg>
+    <p class="lede center">Comprehensive physiotherapy services for all ages — from weekend warriors to those recovering from surgery.</p>
+  </div>
+
+  <div class="wrap" style="margin-top:2rem; display:grid; gap:2.2rem;">
+    <!-- Sports -->
+    <div>
+      <span class="eyebrow">Sports injury rehabilitation</span>
+      <h3>Sports injuries</h3>
+      <div class="grid cols-2">
+        <div class="card"><span class="icon">🏃</span><h3>What we treat</h3><ul><li>ACL, MCL &amp; ligament injuries</li><li>Ankle sprains &amp; strains</li><li>Runner's knee &amp; shin splints</li><li>Tennis elbow &amp; rotator cuff</li><li>Concussion management</li></ul></div>
+        <div class="card"><span class="icon">📋</span><h3>How we help</h3><p>Sport-specific rehab programs, return-to-play assessment, strength &amp; conditioning guidance, and injury prevention strategies to keep you in the game.</p></div>
+      </div>
+    </div>
+
+    <!-- Back Pain -->
+    <div>
+      <span class="eyebrow">Back pain &amp; spine care</span>
+      <h3>Back &amp; neck pain</h3>
+      <div class="grid cols-2">
+        <div class="card"><span class="icon">💆</span><h3>What we treat</h3><ul><li>Lower back pain &amp; sciatica</li><li>Neck pain &amp; whiplash</li><li>Herniated discs</li><li>Postural pain from sitting</li><li>Spinal stenosis</li></ul></div>
+        <div class="card"><span class="icon">🦴</span><h3>How we help</h3><p>Manual therapy, spinal mobilization, core strengthening, posture correction, and ergonomic advice for work and home.</p></div>
+      </div>
+    </div>
+
+    <!-- Post-Surgery -->
+    <div>
+      <span class="eyebrow">Post-surgery recovery</span>
+      <h3>Post-operative rehab</h3>
+      <div class="grid cols-2">
+        <div class="card"><span class="icon">🏥</span><h3>What we treat</h3><ul><li>Knee &amp; hip replacements</li><li>ACL reconstruction</li><li>Fracture recovery</li><li>Spinal surgery rehab</li><li>Rotator cuff repair</li></ul></div>
+        <div class="card"><span class="icon">⏳</span><h3>How we help</h3><p>Gradual, guided recovery plans that respect surgical protocols while maximizing your return to function. We work closely with your surgeon.</p></div>
+      </div>
+    </div>
+
+    <!-- Workplace -->
+    <div>
+      <span class="eyebrow">Workplace injury care</span>
+      <h3>Work injuries</h3>
+      <div class="grid cols-2">
+        <div class="card"><span class="icon">🏢</span><h3>What we treat</h3><ul><li>Repetitive strain injuries</li><li>Back injuries from lifting</li><li>Carpal tunnel syndrome</li><li>Falls &amp; impact injuries</li><li>Overuse injuries</li></ul></div>
+        <div class="card"><span class="icon">🛡️</span><h3>How we help</h3><p>Workplace ergonomic assessments, injury prevention training, return-to-work planning, and documentation for insurance claims.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONDITIONS ===== -->
+<section id="conditions" class="reveal">
+  <div class="wrap center">
+    <span class="eyebrow">Common conditions we treat</span>
+    <h2>You're in <span style="color:var(--lime);">good hands</span></h2>
+    <p class="lede center">These are some of the most common conditions we see — but every patient is different, and every treatment plan is tailored to you.</p>
+  </div>
+
+  <div class="wrap" style="margin-top:1.5rem;">
+    <div class="condition-grid">
+      <div class="condition-badge"><span class="icon">🦵</span>Knee pain</div>
+      <div class="condition-badge"><span class="icon">💪</span>Shoulder injury</div>
+      <div class="condition-badge"><span class="icon">🦶</span>Ankle sprain</div>
+      <div class="condition-badge"><span class="icon">🔵</span>Sciatica</div>
+      <div class="condition-badge"><span class="icon">🦴</span>Arthritis</div>
+      <div class="condition-badge"><span class="icon">🏋️</span>Sports injury</div>
+      <div class="condition-badge"><span class="icon">💆</span>Neck pain</div>
+      <div class="condition-badge"><span class="icon">🩹</span>Post-surgery</div>
+      <div class="condition-badge"><span class="icon">🏢</span>Work injury</div>
+      <div class="condition-badge"><span class="icon">🧠</span>Concussion</div>
+      <div class="condition-badge"><span class="icon">🦿</span>Hip pain</div>
+      <div class="condition-badge"><span class="icon">💪</span>Tennis elbow</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section-alt reveal">
+  <div class="wrap center">
+    <span class="eyebrow">Patient stories</span>
+    <h2>What our <span style="color:var(--lime);">patients say</span></h2>
+    <p class="lede center">Real experiences from people who've recovered at Amani Physio.</p>
+  </div>
+  <div class="wrap grid cols-3" style="margin-top:1.5rem;">
+    <div class="testimonial-card">
+      <div class="stars">★ ★ ★ ★ ★</div>
+      <blockquote>"After my knee surgery, I was worried I'd never run again. Dr. James got me back to my morning runs in 4 months. Incredible work."</blockquote>
+      <div class="name">— Michael K.</div>
+      <div class="role">Runner, Nairobi</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">★ ★ ★ ★ ★</div>
+      <blockquote>"I had lower back pain for years. After 6 sessions, I'm pain-free. The exercises actually worked — and I could do them at home."</blockquote>
+      <div class="name">— Grace W.</div>
+      <div class="role">Office worker, Kilimani</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">★ ★ ★ ★ ★</div>
+      <blockquote>"My shoulder injury from rugby was handled with real care. The rehab program got me back to the field faster than I expected."</blockquote>
+      <div class="name">— Kevin O.</div>
+      <div class="role">Rugby player</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" class="reveal">
+  <div class="wrap center">
+    <span class="eyebrow">Frequently asked questions</span>
+    <h2>Questions people ask before their first visit.</h2>
+    <p class="lede center">Don't see your question? Message us on WhatsApp or call — we're happy to help.</p>
+  </div>
+
+  <div class="wrap" style="max-width:800px; margin-top:1.8rem;">
+    <div class="faq-item open">
+      <button class="faq-q"><span>How do I know if I need physiotherapy?</span><span class="plus">+</span></button>
+      <div class="faq-a"><p>If you have pain that's limiting your daily activities, an injury that isn't healing, or you're recovering from surgery — physiotherapy can help. Book a consultation and we'll assess what's needed.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q"><span>How much does a session cost?</span><span class="plus">+</span></button>
+      <div class="faq-a"><p>We offer clear, upfront pricing for all sessions. Contact us via WhatsApp or phone for current rates — and we'll give you a full breakdown before you book.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q"><span>What happens in the first appointment?</span><span class="plus">+</span></button>
+      <div class="faq-a"><p>We assess your condition, discuss your history, and do a physical examination. Then we create a treatment plan tailored to you — and start working on it immediately.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q"><span>Do I need a doctor's referral?</span><span class="plus">+</span></button>
+      <div class="faq-a"><p>In Kenya, you don't need a referral to see a physiotherapist. You can book directly. If we think you need a doctor's input, we'll let you know.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q"><span>Do you accept NHIF or insurance?</span><span class="plus">+</span></button>
+      <div class="faq-a"><p>We accept various insurance plans and NHIF. Contact us with your details and we'll confirm coverage before your first visit.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q"><span>How long does treatment usually take?</span><span class="plus">+</span></button>
+      <div class="faq-a"><p>It depends on your condition. Some patients see improvement in 3–6 sessions; others need ongoing support. We'll discuss expected timelines during your first visit.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q"><span>What's the easiest way to book?</span><span class="plus">+</span></button>
+      <div class="faq-a"><p>Message us on WhatsApp, call, or use the form below. We reply personally and find a time that works for you.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section-alt reveal">
+  <div class="wrap center">
+    <span class="eyebrow">Contact &amp; booking</span>
+    <h2>Ready to <span style="color:var(--lime);">start your recovery?</span></h2>
+    <svg class="sig-line" viewBox="0 0 460 46" fill="none" aria-hidden="true" style="margin-inline:auto;">
+      <path d="M2 34C60 8 100 44 160 26C210 11 240 40 300 22C340 10 370 30 458 14" />
+    </svg>
+    <p class="lede center">Call, message us on WhatsApp, or fill out the form below. We reply personally — usually within 2 hours.</p>
+  </div>
+
+  <div class="wrap" style="margin-top:2rem; display:grid; gap:2.2rem;">
+    <div class="grid cols-3">
+      <div class="card center">
+        <h3>📞 Call</h3>
+        <p style="font-size:0.9rem; color:var(--gray);">Mon–Sat, 7am–7pm</p>
+        <a href="tel:+254712345678" class="btn btn-ghost" style="margin-top:0.6rem;">+254 712 345 678</a>
+      </div>
+      <div class="card center">
+        <h3>💬 WhatsApp</h3>
+        <p style="font-size:0.9rem; color:var(--gray);">Message any time — we reply fast.</p>
+        <a href="https://wa.me/254712345678" class="btn btn-whatsapp" target="_blank" rel="noopener" style="margin-top:0.6rem; justify-content:center;" onclick="gtag('event', 'whatsapp_click', {'event_category': 'Contact', 'event_label': 'Contact Card'});">Open WhatsApp</a>
+      </div>
+      <div class="card center">
+        <h3>📍 Visit us</h3>
+        <p style="font-size:0.9rem; color:var(--gray);">Suite 4, Cedar Court<br>Argwings Kodhek Rd, Kilimani<br>Nairobi</p>
+        <a href="mailto:hello@amaniwellness.co.ke" class="btn btn-ghost" style="margin-top:0.6rem;">Email instead</a>
+      </div>
+    </div>
+
+    <form class="form-panel" id="contact-form">
+      <h3 style="margin-bottom:0.3rem;">Book your consultation</h3>
+      <p style="font-size:0.9rem; color:var(--gray); margin-bottom:1.2rem;">Share as much or as little as you're comfortable with. We'll get back to you within 2 hours.</p>
+      <div class="grid cols-2">
+        <div class="field"><label for="c-name">Your name</label><input id="c-name" type="text" required placeholder="Your name"></div>
+        <div class="field"><label for="c-phone">Phone or WhatsApp</label><input id="c-phone" type="tel" required placeholder="07XX XXX XXX"></div>
+      </div>
+      <div class="field"><label for="c-email">Email (optional)</label><input id="c-email" type="email" placeholder="you@email.com"></div>
+      <div class="field"><label for="c-condition">What condition are you seeking help for?</label>
+        <select id="c-condition">
+          <option>Back / neck pain</option>
+          <option>Knee / leg pain</option>
+          <option>Shoulder / arm injury</option>
+          <option>Sports injury</option>
+          <option>Post-surgery recovery</option>
+          <option>Workplace injury</option>
+          <option>Ankle / foot pain</option>
+          <option>Not sure — just need assessment</option>
+        </select>
+      </div>
+      <div class="field"><label for="c-msg">Message (optional)</label><textarea id="c-msg" placeholder="Anything you'd like us to know before we call."></textarea></div>
+      <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Book consultation</button>
+      <p class="form-status">Prefer not to fill out a form? Message us directly on <a href="https://wa.me/254712345678" style="color:var(--lime); text-decoration:underline;">WhatsApp</a> instead.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <div class="brand" style="font-size:1.15rem;">Amani<span>·</span>Physio</div>
+      <p style="max-width:34ch; opacity:0.85; margin-top:0.8rem; font-size:0.9rem;">Evidence-based physiotherapy in Kilimani, Nairobi. Sports injuries, back pain, post-surgery recovery, and workplace injury care.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#about">About the practice</a></li>
+        <li><a href="#services">Services &amp; specialties</a></li>
+        <li><a href="#conditions">Conditions we treat</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact &amp; booking</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Reach us</h4>
+      <ul>
+        <li><a href="tel:+254712345678">📞 +254 712 345 678</a></li>
+        <li><a href="https://wa.me/254712345678">💬 WhatsApp</a></li>
+        <li><a href="mailto:hello@amaniwellness.co.ke">✉ hello@amaniwellness.co.ke</a></li>
+        <li>📍 Kilimani, Nairobi</li>
+        <li>🕐 Mon–Sat · 7am – 7pm</li>
+      </ul>
+    </div>
+  </div>
+  <div class="fine">© 2026 Amani Physiotherapy & Wellness. Built by IsaacWebs.</div>
+</footer>
+
+<!-- ===== WHATSAPP FLOAT ===== -->
+<a href="https://wa.me/254712345678" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" onclick="gtag('event', 'whatsapp_click', {'event_category': 'Contact', 'event_label': 'Floating Button'});">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.51 2 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.13.82.84-3.05-.2-.31a8.16 8.16 0 0 1-1.26-4.36c0-4.52 3.68-8.2 8.24-8.2 2.2 0 4.27.86 5.82 2.42a8.17 8.17 0 0 1 2.41 5.82c0 4.52-3.68 8.2-8.23 8.2Z"/></svg>
+</a>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // ── Mobile Menu ──
+  const menuBtn = document.querySelector('.menu-btn');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      menuBtn.textContent = isOpen ? 'CLOSE ✕' : 'MENU ☰';
+      menuBtn.setAttribute('aria-expanded', isOpen);
+    });
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      menuBtn.textContent = 'MENU ☰';
+      menuBtn.setAttribute('aria-expanded', 'false');
+    }));
+  }
+
+  // ── FAQ Accordion ──
+  document.querySelectorAll('.faq-item').forEach((item) => {
+    const q = item.querySelector('.faq-q');
+    q.addEventListener('click', () => {
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach((el) => { if (el !== item) el.classList.remove('open'); });
+      item.classList.toggle('open', !wasOpen);
+    });
+  });
+
+  // ── Contact Form ──
+  const form = document.querySelector('#contact-form');
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const note = form.querySelector('.form-status');
+      if (note) {
+        note.textContent = "✅ Thank you! We'll get back to you within 2 hours. (Demo — live site would email the clinic)";
+        note.style.color = 'var(--lime)';
+      }
+    });
+  }
+
+  // ── Scroll Reveal ──
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  reveals.forEach(el => observer.observe(el));
+});
+</script>
+</body>
+</html>
+```
