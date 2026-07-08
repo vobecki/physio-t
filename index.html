@@ -263,19 +263,21 @@
 
     /* ── HERO ── */
     .hero {
-      padding: 3.6rem 0 2.6rem;
+      padding: 4.4rem 0 3rem;
       position: relative;
       overflow: hidden;
+      background: radial-gradient(circle at top right, rgba(200,240,76,0.06), transparent 32%), linear-gradient(180deg, #0b0b0b 0%, #090909 100%);
     }
 
     .hero::before {
       content: '';
       position: absolute;
-      top: 10%;
-      left: 20%;
-      width: 600px;
-      height: 600px;
-      background: radial-gradient(circle, rgba(200,240,76,0.04) 0%, transparent 65%);
+      top: 0;
+      left: 50%;
+      width: 580px;
+      height: 580px;
+      transform: translateX(-50%);
+      background: radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 65%);
       pointer-events: none;
     }
 
@@ -286,34 +288,85 @@
       z-index: 1;
     }
 
-    .hero-copy { max-width: 640px; }
+    .hero-copy {
+      max-width: 620px;
+    }
+
+    .hero-copy .eyebrow {
+      letter-spacing: 0.22em;
+      margin-bottom: 1.3rem;
+    }
+
+    .hero-copy h1 {
+      font-size: clamp(3rem, 6vw, 5rem);
+      letter-spacing: -0.06em;
+      line-height: 1.02;
+    }
 
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 0.9rem;
-      margin-top: 1.6rem;
+      margin-top: 1.8rem;
     }
 
     .hero-art {
-      aspect-ratio: 4/3;
-      border-radius: 8px;
-      background: var(--card);
-      border: 1px solid var(--border);
+      min-height: 420px;
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)), var(--card);
+      border: 1px solid rgba(200,240,76,0.16);
+      box-shadow: 0 32px 90px rgba(0,0,0,0.35);
       position: relative;
       overflow: hidden;
     }
 
-    .hero-art svg {
+    .hero-art::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(10,10,10,0.16), rgba(10,10,10,0.36));
+      pointer-events: none;
+      mix-blend-mode: soft-light;
+    }
+
+    .hero-art img,
+    .hero-art svg,
+    .hero-art .hero-placeholder {
       position: absolute;
       inset: 0;
       width: 100%;
       height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-art .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top left, rgba(200,240,76,0.18), transparent 32%);
+      pointer-events: none;
+    }
+
+    .hero-art .hero-placeholder {
+      display: grid;
+      place-items: center;
+      color: rgba(255,255,255,0.7);
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 1.7rem;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(0,0,0,0.16));
+    }
+
+    .hero-art .hero-placeholder span {
+      display: block;
+      font-size: 0.85rem;
+      max-width: 22rem;
     }
 
     @media (min-width: 960px) {
       .hero .wrap {
-        grid-template-columns: 1.1fr 0.9fr;
+        grid-template-columns: 1.1fr 0.95fr;
         align-items: center;
       }
     }
@@ -800,18 +853,10 @@
         </a>
       </div>
     </div>
-    <div class="hero-art" role="img" aria-label="Physiotherapy illustration">
-      <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
-        <!-- Abstract body/physio shapes -->
-        <ellipse cx="200" cy="180" rx="120" ry="80" fill="#1A1A1A" stroke="#C8F04C" stroke-width="1.5" opacity="0.6"/>
-        <ellipse cx="170" cy="140" rx="40" ry="30" fill="none" stroke="#C8F04C" stroke-width="1.5" opacity="0.4"/>
-        <ellipse cx="230" cy="140" rx="40" ry="30" fill="none" stroke="#C8F04C" stroke-width="1.5" opacity="0.4"/>
-        <circle cx="170" cy="140" r="8" fill="#C8F04C" opacity="0.3"/>
-        <circle cx="230" cy="140" r="8" fill="#C8F04C" opacity="0.3"/>
-        <path d="M120 220 Q 200 260 280 220" stroke="#C8F04C" stroke-width="2.5" fill="none" opacity="0.5"/>
-        <circle cx="200" cy="195" r="10" fill="#C8F04C" opacity="0.2"/>
-        <path d="M160 120 L 140 90 M 240 120 L 260 90" stroke="#C8F04C" stroke-width="1.5" opacity="0.3"/>
-      </svg>
+    <div class="hero-art" role="img" aria-label="Physiotherapist with patient">
+      <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=80" alt="Physiotherapist with patient" loading="lazy">
+      <div class="hero-overlay"></div>
+      <!-- Replace the image URL above with your own clinic or team photo for the final site. -->
     </div>
   </div>
 </section>
